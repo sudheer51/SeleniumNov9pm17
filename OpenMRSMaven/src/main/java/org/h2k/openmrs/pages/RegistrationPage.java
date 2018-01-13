@@ -4,6 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
+/**
+ * Modify the code for the branch US_12345
+ * @author qa
+ *
+ */
 public class RegistrationPage {
 	WebDriver driver;
 
