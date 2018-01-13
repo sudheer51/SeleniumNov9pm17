@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3" verbose="5">
+  <test name="Test+Selenium">
+  <parameter name="url" value="https://demo.openmrs.org/openmrs/login.htm" />
+  <parameter name="browserType" value="FF" />
+  	<classes>
+  		<class name="org.h2k.openmrs.tests.RegistrationTests" />
+  	</classes>
+  </test>  
+   <test name="Test+Java">
+ <parameter name="url" value="https://demo.openmrs.org/openmrs/login.htm" />
+  <parameter name="browserType" value="CH" />	
+  	<classes>
+  		<class name="org.h2k.openmrs.tests.RegistrationTests" />
+  	</classes>
+  </test>  
+     <test name="Test+Appium">
+  <parameter name="url" value="https://demo.openmrs.org/openmrs/login.htm" />
+  <parameter name="browserType" value="IE" />	
+  	<classes>
+  	<class name="org.h2k.openmrs.tests.RegistrationTests" />
+  	</classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
